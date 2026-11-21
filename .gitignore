@@ -1,0 +1,45 @@
+# Private instructions and editor state
+AGENTS.md
+.vs/
+.vscode/
+.idea/
+
+# Dependencies
+**/node_modules/
+
+# Local credentials, cookies, and runtime state
+.env
+.env.*
+!.env.example
+glint-cookie.txt
+glint-claimer-state.json
+glint-claimer.local.json
+*cookie*.txt
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+*-dump.txt
+
+# Common generated output
+dist/
+build/
+coverage/
+.cache/
+tmp/
+temp/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini

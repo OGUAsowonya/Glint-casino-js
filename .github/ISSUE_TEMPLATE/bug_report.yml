@@ -1,0 +1,53 @@
+name: Bug report
+description: Report a reproducible problem in this repository
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include cookies, webhooks, private account identifiers, or live credentials.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Provide minimal, redacted steps.
+      placeholder: |
+        1. Run ...
+        2. Configure ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: input
+    id: runtime
+    attributes:
+      label: Runtime
+      description: Node.js, PowerShell, browser, and userscript-manager versions.
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Redacted logs
+      description: Remove all credentials and personal identifiers before pasting.
+      render: shell
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Safety checks
+      options:
+        - label: I removed credentials, cookies, webhooks, and personal identifiers.
+          required: true
+        - label: I reproduced this against a system or account I am authorized to test.
+          required: true

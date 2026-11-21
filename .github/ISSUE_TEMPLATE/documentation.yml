@@ -1,0 +1,35 @@
+name: Documentation correction
+description: Suggest a correction or clarification
+title: "[Docs]: "
+labels:
+  - documentation
+body:
+  - type: input
+    id: document
+    attributes:
+      label: Document
+      placeholder: GLINT-DonutSMP-Casino-Findings.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction
+      description: Explain what should change and why.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Redacted evidence
+      description: Include reproducible evidence without credentials or private data.
+
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: This report contains no credentials or personal identifiers.
+          required: true

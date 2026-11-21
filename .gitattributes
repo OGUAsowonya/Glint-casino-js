@@ -1,2 +1,19 @@
-# Auto detect text files and perform LF normalization
 * text=auto
+
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+*.js text eol=lf
+*.mjs text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+
+_*/** linguist-generated=true
+chunk-*.js linguist-generated=true

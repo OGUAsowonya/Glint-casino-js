@@ -1,0 +1,21 @@
+{
+  "baseUrl": "https://donutglint.com",
+  "cookie": "",
+  "webhookUrl": "",
+  "webhookUsername": "GLINT bot",
+  "pollMs": 5000,
+  "tagPollMs": 30000,
+  "rakebackPollMs": 30000,
+  "walletPollMs": 10000,
+  "summaryEveryMs": 600000,
+  "autoRain": true,
+  "autoTag": true,
+  "autoRakeback": true,
+  "webhookMode": "flush",
+  "minWebhookAmount": 1,
+  "stateFile": "glint-claimer-state.json",
+  "cookieFile": "glint-cookie.txt",
+  "ingestPort": 8787,
+  "verbose": true,
+  "logFile": ""
+}
